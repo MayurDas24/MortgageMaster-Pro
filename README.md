@@ -1,195 +1,54 @@
-🏠 MortgageMaster (Python)
+# 🏠 MortgageMaster Pro
 
-A high-precision mortgage analysis suite built with Streamlit
+**MortgageMaster Pro** is a high-performance fintech dashboard designed to provide deep insights into home loan mechanics. Built with Python, it combines rigorous financial mathematics with a modern, high-end user interface to simulate amortization schedules and interest-saving strategies in real-time.
 
-MortgageMaster is a professional-grade mortgage calculation platform that generates accurate monthly payments, full amortization schedules, tax/insurance impacts, and exportable reports (CSV + PDF). Designed for financial clarity and built for real-world use cases.
 
-🚀 Key Features
-📌 1. Smart Mortgage Calculator
 
-Computes:
+## 🚀 Key Features
 
-Principal & Interest
+* **Interactive Amortization Engine:** Instantly calculate monthly Principal & Interest (P&I) payments using industry-standard annuity formulas.
+* **Payment Accelerator:** A "What-If" simulator that calculates exactly how much interest is saved and how much the loan term is shortened by adding extra monthly principal payments.
+* **Goated UI/UX:** A bespoke dark-themed interface utilizing **Glassmorphism** and custom CSS to override standard framework elements for a premium, standalone application feel.
+* **Visual Analytics:**
+    * **Equity vs. Debt Projection:** Gradient-filled area charts visualizing the path to homeownership.
+    * **Cost Composition:** Donut charts breaking down the ratio of Principal, Interest, and Escrow.
+* **Dynamic Data Tables:** A high-fidelity amortization schedule with formatted currency and status tracking.
 
-Property tax (monthly)
+## 🛠️ Tech Stack
 
-Home insurance (monthly)
+* **Frontend:** [Streamlit](https://streamlit.io/) (Custom CSS Injection & HTML Components)
+* **Data Analysis:** [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/)
+* **Visualizations:** [Altair](https://altair-viz.github.io/) (Declarative Statistical Visualization)
+* **Financial Logic:** Custom Python implementation of the Fixed-Rate Mortgage formula.
 
-HOA fees
+## 📈 SDE Competencies Demonstrated
 
-Accepts multiple currencies (₹, $, €, £, ¥)
+This project serves as a showcase of core software engineering principles:
+* **Data Science Integration:** Handling large numerical datasets and translating them into meaningful visual stories.
+* **Frontend Engineering:** Pushing the boundaries of low-code frameworks through custom CSS and DOM manipulation.
+* **Mathematical Modeling:** Implementing complex financial logic with high precision.
 
-Calculates down payment percentage instantly
+## 📦 Getting Started
 
-Supports loan terms from 1 to 50 years
+1.  **Clone the Repo:**
+    ```bash
+    git clone [https://github.com/MayurDas24/MortgageMaster-Pro.git](https://github.com/MayurDas24/MortgageMaster-Pro.git)
+    cd MortgageMaster-Pro
+    ```
 
-📊 2. Interactive Visual Insights
+2.  **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Beautiful Altair donut chart showing payment breakdown
+3.  **Launch the App:**
+    ```bash
+    streamlit run main.py
+    ```
 
-Summary KPI metrics:
+---
 
-Loan Amount
+**Developed by [Mayur R Das](https://github.com/MayurDas24)**
+*B.Tech in Computer Science | Manipal Institute of Technology (MIT), Manipal*
 
-Total Interest Paid
-
-Total Cost of Loan
-
-📉 3. Full Amortization Table
-
-Month-by-month schedule including:
-
-Principal Payment
-
-Interest Payment
-
-Cumulative Interest
-
-Remaining Balance
-
-Fully formatted and scrollable
-
-Expandable UI element
-
-📄 4. Export Options
-CSV Export
-
-1-click export of entire amortization schedule
-
-PDF Export (Professional Report)
-
-Auto-generated PDF with:
-
-Title section
-
-Summary table
-
-Full amortization table
-
-Styled using ReportLab
-
-Professional formatting
-
-Finance-ready deliverable for clients or documentation
-
-💡 5. Modern UI / UX
-
-Wide layout for maximum readability
-
-Styled metric cards
-
-Clean typography
-
-Responsive layout across devices
-
-Built-in section dividers & spacing
-
-🧠 How the App Works
-Mortgage Formula
-
-Uses the industry-standard loan amortization formula:
-
-Monthly Payment (P&I):
-
-𝑀
-=
-𝑃
-⋅
-𝑟
-(
-1
-+
-𝑟
-)
-𝑛
-(
-1
-+
-𝑟
-)
-𝑛
-−
-1
-M=P⋅
-(1+r)
-n
-−1
-r(1+r)
-n
-	​
-
-
-Where:
-
-P = Principal
-
-r = Monthly interest rate
-
-n = Number of payments
-
-Amortization Loop
-
-Each month, the model computes:
-
-Interest due
-
-Principal paid
-
-Updated balance
-
-Running total interest
-
-PDF Generation Workflow
-
-Creates a full PDF in memory using BytesIO
-
-Styled tables with alternating colors
-
-Exports on demand
-
-📁 Project Structure
-📂 MortgageMaster
-│── app.py                     # Main Streamlit application
-│── README.md                  # Documentation
-│── requirements.txt            # Dependencies (recommended)
-
-🔧 Installation & Setup
-1. Clone the Repo
-git clone <your-repo-url>
-cd MortgageMaster
-
-2. Install Dependencies
-streamlit
-pandas
-numpy
-altair
-reportlab
-
-
-Or via:
-
-pip install -r requirements.txt
-
-3. Run the App
-streamlit run app.py
-
-📤 Exported Outputs
-Format	Contents	Purpose
-CSV	Full amortization schedule	Excel/spreadsheet users
-PDF Report	Summary + full schedule	Clients, documentation, printing
-🖼 UI Overview
-
-Clean header
-
-Two-column layout (Inputs → Results)
-
-Donut visualization
-
-Expander-based schedule table
-
-Footer with developer signature
-
-🧑‍💻 Author
-
-Varsh Vishwakarma
-AI • ML • DL • Data Science • Cloud • Full-Stack ML Developer
+---
