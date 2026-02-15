@@ -49,6 +49,6 @@ This project serves as a showcase of core software engineering principles:
 ---
 
 **Developed by [Mayur R Das](https://github.com/MayurDas24)**
-*B.Tech in Computer Science | Manipal Institute of Technology (MIT), Manipal*
+*B.Tech in Computer Communication Engineering | Manipal Institute of Technology (MIT), Manipal*
 
 ---
